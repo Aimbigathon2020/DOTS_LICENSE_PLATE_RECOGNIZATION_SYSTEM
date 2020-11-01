@@ -92,7 +92,6 @@ def uploaded_image(filename,email):
     else:
         delete_file(filename)
         flash('sorry ,this file doesnt contain license')
-        print('sorry ,this file doesnt contain license')
         return redirect(url_for('get_image'))
     
 
